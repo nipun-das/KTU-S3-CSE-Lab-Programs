@@ -1,5 +1,3 @@
-package com.company;
-
 /*Write a Java program which creates a class named 'Employee' having the
 following members: Name, Age, Phone number, Address, Salary. It also has a
 method named 'print- Salary( )' which prints the salary of the Employee. Two
