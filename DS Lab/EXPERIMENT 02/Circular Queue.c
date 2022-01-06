@@ -1,3 +1,10 @@
+/*
+Implement a circular queue using arrays with the operations:
+1.Insert an element to the queue.
+2.Delete an elements from the queue.
+3.Display the contents of the queue after each operation.
+*/
+
 #include <stdio.h>
 #define MAX 5
 
