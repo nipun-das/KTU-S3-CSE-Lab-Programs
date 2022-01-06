@@ -1,6 +1,8 @@
-/*Write a program to read two polynomials and store them in an array. Calculate the sum of the
+/*
+Write a program to read two polynomials and store them in an array. Calculate the sum of the
 two polynomials and display the first polynomial, second polynomial and the resultant
-polynomial.*/
+polynomial.
+*/
 
 
 #include <stdio.h>
