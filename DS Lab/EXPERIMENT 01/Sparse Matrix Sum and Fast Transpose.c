@@ -1,7 +1,9 @@
-/*Write a program to enter two matrices in normal form . Write a function to convert two
+/*
+Write a program to enter two matrices in normal form . Write a function to convert two
 matrices to tuple form and display it. Also find the transpose of the two matrices represented
 in tuple form and display it. Find the sum of the two matrices in tuple form and display the
-sum in tuple form.*/
+sum in tuple form.
+*/
 
 
 #include <stdio.h>
