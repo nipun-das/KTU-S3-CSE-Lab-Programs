@@ -1,3 +1,9 @@
+/*Implement a Stack using arrays with the operations:
+6.1.Pushing elements to the Stack.
+6.2.Popping elements from the Stack
+6.3.Display the contents of the Stack after each operation.*/
+
+
 #include <stdio.h>
 #define MAX 8
 
