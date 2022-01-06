@@ -1,3 +1,8 @@
+/*Implement a Priority Queue using arrays with the operations:
+7.1.Insert elements to the Priority Queue.
+7.2.Delete elements from the Priority Queue.
+7.3.Display the contents of the Priority Queue after each operation.*/
+
 #include <stdio.h>
 #define MAX 5
 int pQueue[MAX], rear = -1, front = -1;
