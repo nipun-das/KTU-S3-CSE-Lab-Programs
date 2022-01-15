@@ -4,12 +4,25 @@ Implement a Stack using arrays with the operations:
 2.Popping elements from the Stack
 3.Display the contents of the Stack after each operation.
 */
-
-
 #include <stdio.h>
 #define MAX 8
 
 int stack[MAX], top = -1;
+
+void display()
+{
+    if (top == -1)
+    {
+        printf("Stack underflow");
+    }
+    else
+    {
+        for (int i = 0; i <= top; i++)
+        {
+            printf("%d ", stack[i]);
+        }
+    }
+}
 
 void push(int item)
 {
@@ -20,6 +33,8 @@ void push(int item)
     else
     {
         stack[++top] = item;
+        printf("Stack : ");
+        display();
     }
 }
 
@@ -33,23 +48,9 @@ void pop()
     else
     {
         del = stack[top--];
-        printf("\nDeleted: %d", del);
-    }
-}
-
-void display()
-{
-    if (top == -1)
-    {
-        printf("\nStack underflow");
-    }
-    else
-    {
-        printf("\n");
-        for (int i = 0; i <= top; i++)
-        {
-            printf("%d ", stack[i]);
-        }
+        printf("\nDeleted: %d\n", del);
+        printf("Stack : ");
+        display();
     }
 }
 
@@ -58,11 +59,10 @@ int main()
     int ch, element;
     do
     {
-        printf("\nChoose operation");
+        printf("\n\nChoose operation");
         printf("\n1.Push");
         printf("\n2.Pop");
-        printf("\n3.Display stack");
-        printf("\n4.Exit\n");
+        printf("\n3.Exit\n");
         scanf("%d", &ch);
         switch (ch)
         {
@@ -75,13 +75,10 @@ int main()
             pop();
             break;
         case 3:
-            display();
-            break;
-        case 4:
             break;
         default:
             printf("Invalid Choice!");
             break;
         }
-    } while (ch < 4);
+    } while (ch < 3);
 }
