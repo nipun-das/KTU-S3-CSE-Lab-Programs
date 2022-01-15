@@ -17,8 +17,6 @@ struct polynomial
 void main()
 {
     int d1, d2, i, k = 0, l = 0, m = 0;
-
-    //Reading first polynomial
     printf("Enter the highest degree of the first polynomial : ");
     scanf("%d", &d1);
     for (i = 0; i <= d1; i++)
@@ -28,7 +26,6 @@ void main()
         a[k++].exp = i;
     }
 
-    //Reading second polynomial
     printf("Enter the highest degree of the second polynomial : ");
     scanf("%d", &d2);
     for (i = 0; i <= d2; i++)
@@ -37,7 +34,7 @@ void main()
         scanf("%f", &b[i].coeff);
         b[l++].exp = i;
     }
-    //Displaying first polynomial
+
     printf("\nFirst polynomial = ");
     for (i = d1; i >= 1; i--)
     {
@@ -45,8 +42,8 @@ void main()
     }
     printf("%0.1f", a[0].coeff);
     printf("\n");
-    //Displaying second polynomial
-    printf("\nSecond polynomial = %0.1f", b[0].coeff);
+
+    printf("\nSecond polynomial = ");
     for (i = d2; i >= 1; i--)
     {
         printf("%0.1fx^%d + ", b[i].coeff, b[i].exp);
@@ -83,8 +80,8 @@ void main()
             m++;
         }
     }
-    //Displaying polynomial sum
-    printf("\nPolynomial sum ");
+
+    printf("\nPolynomial sum = ");
     for (i = m - 1; i >= 1; i--)
     {
         printf("%0.1fx^%d + ", c[i].coeff, c[i].exp);
