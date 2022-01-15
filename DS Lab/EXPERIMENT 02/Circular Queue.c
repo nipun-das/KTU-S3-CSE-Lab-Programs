@@ -8,21 +8,21 @@ Implement a circular queue using arrays with the operations:
 #include <stdio.h>
 #define MAX 5
 
-int cQueue[MAX], front = -1, rear = -1;
+int cQ[MAX], front = -1, rear = -1;
 
 void display()
 {
     int i = front;
     if (front == -1 && rear == -1)
     {
-        printf("\nQueue underflow\n");
+        printf("Queue underflow\n");
     }
     while (i != rear)
     {
-        printf("%d ", cQueue[i]);
+        printf("%d ", cQ[i]);
         i = (i + 1) % MAX;
     }
-    printf("%d ", cQueue[rear]);
+    printf("%d ", cQ[rear]);
 }
 
 void enqueue(int item)
@@ -34,14 +34,14 @@ void enqueue(int item)
     else if (front == -1 && rear == -1)
     {
         front = rear = 0;
-        cQueue[rear] = item;
+        cQ[rear] = item;
         printf("Circular Queue : ");
         display();
     }
     else
     {
         rear = (rear + 1) % MAX;
-        cQueue[rear] = item;
+        cQ[rear] = item;
         printf("Circular Queue : ");
         display();
     }
@@ -56,7 +56,7 @@ void pop()
     }
     else if (front == rear)
     {
-        del = cQueue[front];
+        del = cQ[front];
         printf("The element removed is %d\n", del);
         front = rear = -1;
         printf("Circular Queue : ");
@@ -64,7 +64,7 @@ void pop()
     }
     else
     {
-        del = cQueue[front];
+        del = cQ[front];
         printf("The element removed is %d\n", del);
         front = (front + 1) % MAX;
         printf("Circular Queue : ");
@@ -77,7 +77,7 @@ int main()
     int ch, element;
     do
     {
-        printf("\nChoose operation\n");
+        printf("\n\nChoose operation\n");
         printf("\n1.Enqueue");
         printf("\n2.Dequeue");
         printf("\n3.Exit\n");
