@@ -4,7 +4,6 @@ two polynomials and display the first polynomial, second polynomial and the resu
 polynomial.
 */
 
-
 #include <stdio.h>
 #include <math.h>
 
@@ -25,7 +24,6 @@ void main()
         scanf("%f", &a[i].coeff);
         a[k++].exp = i;
     }
-
     printf("Enter the highest degree of the second polynomial : ");
     scanf("%d", &d2);
     for (i = 0; i <= d2; i++)
@@ -34,7 +32,6 @@ void main()
         scanf("%f", &b[i].coeff);
         b[l++].exp = i;
     }
-
     printf("\nFirst polynomial = ");
     for (i = d1; i >= 1; i--)
     {
@@ -42,7 +39,6 @@ void main()
     }
     printf("%0.1f", a[0].coeff);
     printf("\n");
-
     printf("\nSecond polynomial = ");
     for (i = d2; i >= 1; i--)
     {
@@ -80,7 +76,6 @@ void main()
             m++;
         }
     }
-
     printf("\nPolynomial sum = ");
     for (i = m - 1; i >= 1; i--)
     {
