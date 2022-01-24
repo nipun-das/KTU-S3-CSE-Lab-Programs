@@ -1,6 +1,4 @@
-/*Experiment 3
-C C Nipun Das
-VML20CS066*/
+/*Using stack convert an infix expression to a postfix expression*/
 
 #include <stdio.h>
 #include <ctype.h>
@@ -67,10 +65,3 @@ int main()
     }
     return 0;
 }
-/*OUTPUT:
-
-Enter the expression : a+b*(c^d-e)^(f+g*h)-i
-
-a b c d ^ e - f g h * + ^ * + i -
-
-*/
