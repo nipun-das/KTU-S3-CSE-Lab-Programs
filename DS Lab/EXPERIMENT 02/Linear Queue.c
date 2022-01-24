@@ -5,18 +5,16 @@ Implement a Queue using arrays with the operations:
 3.Display the contents of the Queue after each operation.
 */
 
-
 #include <stdio.h>
-#define MAX 5
 
-int queue[MAX], front = -1, rear = -1;
-
+int queue[100], n, front = -1, rear = -1;
 
 void display()
 {
+    printf("\nQueue : ");
     if (front == -1 && rear == -1)
     {
-        printf("\nQueue underflow");
+        printf("\nQueue is empty");
     }
     else
     {
@@ -25,31 +23,25 @@ void display()
             printf("%d ", queue[i]);
         }
     }
-    
 }
-
 void enqueue(int item)
 {
-    if (rear == MAX - 1)
+    if (rear == n - 1)
     {
         printf("\nQueue overflow");
     }
+
     else if (front == -1 && rear == -1)
     {
         front = rear = 0;
         queue[rear] = item;
-        printf("Queue : ");
-        display();
     }
     else
     {
         rear++;
         queue[rear] = item;
-        printf("Queue : ");
-        display();
     }
 }
-
 void dequeue()
 {
     int del;
@@ -60,31 +52,28 @@ void dequeue()
     else if (front == rear)
     {
         del = queue[front];
-        printf("The element removed is %d\n", del);
+        printf("\nThe element removed is %d\n", del);
         front = rear = -1;
-        printf("Queue : ");
-        display();
     }
     else
     {
         del = queue[front++];
-        printf("The element removed is %d\n", del);
-        printf("Queue : ");
-        display();
+        printf("\nThe element removed is %d\n", del);
     }
 }
-
-
-
 int main()
 {
     int ch, element;
+    printf("\nEnter the size of queue : ");
+    scanf("%d", &n);
+    int queue[n];
     do
     {
-        printf("\nChoose operation");
+        printf("\n\nChoose operation");
         printf("\n1.Enqueue");
         printf("\n2.Dequeue");
-        printf("\n3.Exit\n");
+        printf("\n3.Display");
+        printf("\n4.Exit\n");
         scanf("%d", &ch);
         switch (ch)
         {
@@ -97,11 +86,15 @@ int main()
             dequeue();
             break;
         case 3:
+            display();
             break;
-
+        case 4:
+            break;
         default:
             printf("Invalid Choice!");
             break;
         }
-    } while (ch < 3);
+    } while (ch < 4);
 }
+
+
