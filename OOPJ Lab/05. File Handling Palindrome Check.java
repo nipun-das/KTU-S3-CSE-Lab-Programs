@@ -1,3 +1,5 @@
+/*Write a program to write a string to a file, read the string from the file and check whether it is a palindrome or not. Write the output to another file*/
+
 import java.io.*;
 import java.util.Scanner;
 
