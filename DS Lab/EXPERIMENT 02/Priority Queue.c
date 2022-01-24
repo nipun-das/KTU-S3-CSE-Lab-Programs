@@ -6,48 +6,46 @@ Implement a Priority Queue using arrays with the operations:
 */
 
 #include <stdio.h>
-#define MAX 5
-int pQueue[MAX], rear = -1, front = -1;
+
+int pQ[100], n, rear = -1, front = -1;
 
 void display()
 {
+    printf("\nPriority Queue : ");
     if (front == -1 && rear == -1)
     {
-        printf("\nQueue underflow");
+        printf("\nPriority queue is empty");
     }
     else
     {
         for (int i = front; i <= rear; i++)
         {
-            printf("%d ", pQueue[i]);
+            printf("%d ", pQ[i]);
         }
     }
 }
-
 void enqueue(int item)
 {
     int pos;
-    if (rear == MAX - 1)
+    if (rear == n - 1)
     {
-        printf("\nOverflow\n");
+        printf("\nQueue overflow\n");
     }
     else
     {
         pos = rear;
         rear = rear + 1;
-        while (pos >= 0 && pQueue[pos] > item)
+        while (pos >= 0 && pQ[pos] > item)
         {
-            pQueue[pos + 1] = pQueue[pos];
+            pQ[pos + 1] = pQ[pos];
             pos = pos - 1;
         }
     }
-    pQueue[pos + 1] = item;
+    pQ[pos + 1] = item;
     if (front == -1)
     {
         front = front + 1;
     }
-    printf("Priority Queue : ");
-    display();
 }
 void dequeue()
 {
@@ -58,30 +56,29 @@ void dequeue()
     }
     else if (front == rear)
     {
-        del = pQueue[front];
-        printf("The element removed is %d\n", del);
+        del = pQ[front];
+        printf("\nThe element removed is %d\n", del);
         front = rear = -1;
-        printf("Priority Queue : ");
-        display();
     }
     else
     {
-        del = pQueue[front++];
-        printf("The element removed is %d\n", del);
-        printf("Priority Queue : ");
-        display();
+        del = pQ[front++];
+        printf("\nThe element removed is %d\n", del);
     }
 }
-
 int main()
 {
     int ch, element;
+    printf("\nEnter the size of the priority queue : ");
+    scanf("%d", &n);
+    int pQ[n];
     do
     {
-        printf("\n\nChoose operation");
+        printf("\n\nChoose operation : ");
         printf("\n1.Enqueue");
         printf("\n2.Dequeue");
-        printf("\n3.Exit\n");
+        printf("\n3.Display");
+        printf("\n4.Exit\n");
         scanf("%d", &ch);
         switch (ch)
         {
@@ -94,10 +91,13 @@ int main()
             dequeue();
             break;
         case 3:
+            display();
+            break;
+        case 4:
             break;
         default:
             printf("Invalid Choice!");
             break;
         }
-    } while (ch < 3);
+    } while (ch < 4);
 }
