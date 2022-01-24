@@ -5,258 +5,83 @@ in tuple form and display it. Find the sum of the two matrices in tuple form and
 sum in tuple form.
 */
 
-
 #include <stdio.h>
-#define MAX 100
-#define MAX_COL 30
+#include <math.h>
 
-typedef struct
+struct polynomial
 {
-    int row;
-    int col;
-    int value;
+    int exp;
+    float coeff;
+} a[10], b[10], c[10];
 
-} term;
-
-void convertToTuple(int m1[100][100], term a[MAX], int ROWS1, int COLUMNS1)
+void main()
 {
-
-    a[0].row = ROWS1;
-    a[0].col = COLUMNS1;
-    int i, j, k = 1;
-    for (i = 0; i < ROWS1; i++)
+    int d1, d2, i, k = 0, l = 0, m = 0;
+    printf("Enter the highest degree of the first polynomial : ");
+    scanf("%d", &d1);
+    for (i = 0; i <= d1; i++)
     {
-        for (j = 0; j < COLUMNS1; j++)
-        {
-            if (m1[i][j] != 0)
-            {
-                a[k].row = i;
-                a[k].col = j;
-                a[k].value = m1[i][j];
-                k++;
-            }
-        }
+        printf("\nEnter the coefficient of x^%d : ", i);
+        scanf("%f", &a[i].coeff);
+        a[k++].exp = i;
     }
-    a[0].value = k - 1;
-}
-
-void transposeTuple(term a[MAX], term aTranspose[MAX])
-{
-    int numCols = a[0].col, numTerms = a[0].value, rowTerms[MAX_COL], startingPos[MAX_COL];
-    aTranspose[0].row = numCols;
-    aTranspose[0].col = a[0].row;
-    aTranspose[0].value = numTerms;
-    int i, j, k = 1;
-    for (i = 0; i < numCols; i++)
+    printf("Enter the highest degree of the second polynomial : ");
+    scanf("%d", &d2);
+    for (i = 0; i <= d2; i++)
     {
-        rowTerms[i] = 0;
+        printf("\nEnter the coefficient of x^%d : ", i);
+        scanf("%f", &b[i].coeff);
+        b[l++].exp = i;
     }
-    for (i = 1; i <= numTerms; i++)
+    printf("\nFirst polynomial = ");
+    for (i = d1; i >= 1; i--)
     {
-        rowTerms[a[i].col]++;
+        printf("%0.1fx^%d + ", a[i].coeff, a[i].exp);
     }
-    startingPos[0] = 1;
-    for (i = 1; i < numCols; i++)
-    {
-        startingPos[i] = startingPos[i - 1] + rowTerms[i - 1];
-    }
-    for (i = 1; i <= numTerms; i++)
-    {
-        j = startingPos[a[i].col]++;
-        aTranspose[j].row = a[i].col;
-        aTranspose[j].col = a[i].row;
-        aTranspose[j].value = a[i].value;
-    }
-}
-
-void sumOfMatrices(term a[MAX], term b[MAX], term sum[MAX])
-{
-    int i = 1, j = 1, k = 1;
-    int l1 = a[0].value;
-    int l2 = b[0].value;
-    sum[0].row = a[0].row;
-    sum[0].col = a[0].col;
-    while (i <= l1 && j <= l2)
-    {
-        if (a[i].row == b[j].row)
-        {
-            if (a[i].col == b[j].col)
-            {
-                sum[k].row = a[i].row;
-                sum[k].col = a[i].col;
-                sum[k].value = a[i].value + b[j].value;
-                i++;
-                j++;
-                k++;
-            }
-            else
-            {
-                if (a[i].col < b[j].col)
-                {
-                    sum[k].row = a[i].row;
-                    sum[k].col = a[i].col;
-                    sum[k].value = a[i].value;
-                    i++;
-                    k++;
-                }
-                else
-                {
-                    sum[k].row = b[j].row;
-                    sum[k].col = b[j].col;
-                    sum[k].value = b[j].value;
-                    j++;
-                    k++;
-                }
-            }
-        }
-        else
-        {
-            if (a[i].row > b[j].row)
-            {
-                sum[k].row = b[j].row;
-                sum[k].col = b[j].col;
-                sum[k].value = b[j].value;
-                j++;
-                k++;
-            }
-            else
-            {
-                sum[k].row = a[i].row;
-                sum[k].col = a[i].col;
-                sum[k].value = a[i].value;
-                i++;
-                k++;
-            }
-        }
-    }
-    while (j <= l2 && i >= l1)
-    {
-        sum[k].row = b[j].row;
-        sum[k].col = b[j].col;
-        sum[k].value = b[j].value;
-        j++;
-        k++;
-    }
-    while (i <= l1 && j >= l2)
-    {
-        sum[k].row = a[i].row;
-        sum[k].col = a[i].col;
-        sum[k].value = a[i].value;
-        i++;
-        k++;
-    }
-    sum[0].value = k - 1;
-}
-void printTuple(term b[MAX])
-{
-    int i;
+    printf("%0.1f", a[0].coeff);
     printf("\n");
-    printf("ROW   COLUMN  VALUE");
-    for (i = 0; i <= b[0].value; i++)
+    printf("\nSecond polynomial = ");
+    for (i = d2; i >= 1; i--)
     {
-        printf("\n");
-        printf("%d\t%d\t%d", b[i].row, b[i].col, b[i].value);
+        printf("%0.1fx^%d + ", b[i].coeff, b[i].exp);
     }
-}
-
-int main()
-{
-    int i, j, m1[100][100], m2[100][100], ROWS1, COLUMNS1, ROWS2, COLUMNS2;
-    term a[MAX], b[MAX], aTranspose[MAX], bTranspose[MAX], sum[MAX];
-    printf("\nEnter matrix 1 order: ");
-    scanf("%d %d", &ROWS1, &COLUMNS1);
-    printf("\nEnter matrix 1: ");
-    for (i = 0; i < ROWS1; i++)
+    printf("%0.1f", b[0].coeff);
+    printf("\n");
+    if (d1 > d2)
     {
-        for (j = 0; j < COLUMNS1; j++)
+        for (i = 0; i <= d2; i++)
         {
-            scanf("%d", &m1[i][j]);
+            c[m].coeff = a[i].coeff + b[i].coeff;
+            c[m].exp = a[i].exp;
+            m++;
         }
-    }
-    printf("\nEnter matrix2 order: ");
-    scanf("%d %d", &ROWS2, &COLUMNS2);
-    printf("\nEnter matrix: ");
-    for (i = 0; i < ROWS2; i++)
-    {
-        for (j = 0; j < COLUMNS2; j++)
+        for (i = d2 + 1; i <= d1; i++)
         {
-            scanf("%d", &m2[i][j]);
+            c[m].coeff = a[i].coeff;
+            c[m].exp = a[i].exp;
+            m++;
         }
-    }
-
-    convertToTuple(m1, a, ROWS1, COLUMNS1);
-    printf("\n\nTriplet Form of First Sparse Matrix ");
-    printTuple(a);
-    printf("\n\nTranspose Triplet Form Of First Sparse Matrix ");
-    transposeTuple(a, aTranspose);
-    printTuple(aTranspose);
-
-    convertToTuple(m2, b, ROWS2, COLUMNS2);
-    printf("\n\nTriplet Form of Second Sparse Matrix ");
-    printTuple(b);
-    printf("\n\nTranspose Triplet Form Of Second Sparse Matrix ");
-    transposeTuple(b, bTranspose);
-    printTuple(bTranspose);
-    if (ROWS1 == ROWS2 && COLUMNS1 == COLUMNS2)
-    {
-        printf("\n\nSUM OF SPARSE MATRICES");
-        sumOfMatrices(a, b, sum);
-        printTuple(sum);
     }
     else
     {
-        printf("\n\nMATRICES ARE NOT OF THE SAME ORDER\nCANNOT BE ADDED");
+        for (i = 0; i <= d1; i++)
+        {
+            c[m].coeff = a[i].coeff + b[i].coeff;
+            c[m].exp = a[i].exp;
+            m++;
+        }
+        for (i = d1 + 1; i <= d2; i++)
+        {
+            c[m].coeff = b[i].coeff;
+            c[m].exp = b[i].exp;
+            m++;
+        }
     }
+    printf("\nPolynomial sum = ");
+    for (i = m - 1; i >= 1; i--)
+    {
+        printf("%0.1fx^%d + ", c[i].coeff, c[i].exp);
+    }
+    printf("%0.1f", c[0].coeff);
 }
 
-/*
-OUTPUT:
-
-Enter matrix 1 order: 2 3
-
-Enter matrix 1: 1 0 0 5 2 0
-
-Enter matrix2 order: 2 3
-
-Enter matrix: 1 3 0 5 0 2
-
-
-Triplet Form of First Sparse Matrix
-ROW   COLUMN  VALUE
-2       3       3
-0       0       1
-1       0       5
-1       1       2
-
-Transpose Triplet Form Of First Sparse Matrix
-ROW   COLUMN  VALUE
-3       2       3
-0       0       1
-0       1       5
-1       1       2
-
-Triplet Form of Second Sparse Matrix
-ROW   COLUMN  VALUE
-2       3       4
-0       0       1
-0       1       3
-1       0       5
-1       2       2
-
-Transpose Triplet Form Of Second Sparse Matrix
-ROW   COLUMN  VALUE
-3       2       4
-0       0       1
-0       1       5
-1       0       3
-2       1       2
-
-SUM OF SPARSE MATRICES
-ROW   COLUMN  VALUE
-2       3       5
-0       0       2
-0       1       3
-1       0       10
-1       1       2
-1       2       2
-*/
