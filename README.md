@@ -10,3 +10,4 @@
 
 <h4>1) Frequency of a given character in a string.<br/><br/>2) Matrix Multiplication.<br/><br/>3) Inheritance example.<br/><br/>4) Abstract Class example.<br/><br/>5) File Writing and Reading example.<br/><br/>6) String Tokenizer Sum of Integers.<br/><br/>7) Exception Handling Divide Two Arrays
 </h4>
+[An Internal Link](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/tree/main/DS%20Lab)
