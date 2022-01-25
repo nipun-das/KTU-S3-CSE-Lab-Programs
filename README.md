@@ -3,11 +3,45 @@
 
 <h2>DATA STRUCTURES - Contents : <h2/> 
   
-<h4>1) A. Polynomial Representation, Sum of Polynomials and displaying it.<br/>&nbsp;&nbsp;&nbsp;&nbsp;B. Tuple form of transpose and sum of Sparse Matrices.</br><br/>2) A. Stack Operations.<br/>&nbsp;&nbsp;&nbsp;&nbsp;B. Queue Operations.</br>&nbsp;&nbsp;&nbsp;&nbsp;C. Circular Queue.<br/>&nbsp;&nbsp;&nbsp;&nbsp;D. Priority Queue.<br/>&nbsp;&nbsp;&nbsp;&nbsp;E. Double Ended Queue (DEQUEUE).<br/><br/>3) Infix to Postfix Expression Conversion using Stack.<br/><br/>4) Linked List Operations.<br/><br/>5) Linear Search and Binary Search.<br/><br/>
-</h4>
+
+####  1.A. [Polynomial Representation, Sum of Polynomials and displaying it.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2001/Polynomial%20Addition.c)&nbsp;&nbsp;&nbsp;
+  
+####  1.B. [Tuple form of transpose and sum of Sparse Matrices.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2001/Sparse%20Matrix%20Sum%20and%20Fast%20Transpose.c)</br><br/>
+
+####  2.A. [Stack Operations using array.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/Stack.c)&nbsp;&nbsp;&nbsp;
+
+####  2.B. [Queue Operations using array](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/Linear%20Queue.c)&nbsp;&nbsp;&nbsp;
+
+####  2.C. [Circular Queue using array.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/Circular%20Queue.c)&nbsp;&nbsp;&nbsp;
+
+####  2.D. [Priority Queue using array.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/Priority%20Queue.c)&nbsp;&nbsp;&nbsp;
+
+####  2.E. [Double Ended Queue (DEQUEUE) using array.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/DEQUEUE.c)<br/><br/>
+
+####  3. [Infix to Postfix Expression Conversion using Stack.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2003/Infix%20to%20Postfix%20Conversion.c)<br/>
+
+####  4. [Linked List Operations.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2004/Linked%20List%20Operations.c)<br/>
+
+####  5. [Linear Search and Binary Search.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2005/Linear%20Search%20and%20Binary%20Search.c)<br/>
+
 
 <h2>OOPJ LAB - Contents : <h2/> 
 
-<h4>1) Frequency of a given character in a string.<br/><br/>2) Matrix Multiplication.<br/><br/>3) Inheritance example.<br/><br/>4) Abstract Class example.<br/><br/>5) File Writing and Reading example.<br/><br/>6) String Tokenizer Sum of Integers.<br/><br/>7) Exception Handling Divide Two Arrays
-</h4>
-[An Internal Link](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/tree/main/DS%20Lab)
+
+####  1. [Frequency of a given character in a string.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/01.%20Frequency%20of%20a%20given%20character%20in%20a%20string.java)<br/><br/>
+  
+####  2. [Matrix Multiplication.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/02.%20Multiply%20two%20given%20matrices.java)<br/><br/>
+  
+####  3. [Inheritance example.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/03.%20Inheritance%20of%20Employee.java)<br/><br/>
+  
+####  4. [Abstract Class example.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/04.%20Abstract%20Class%20Shapes.java)<br/><br/>
+  
+####  5. [File Writing and Reading example.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/05.%20File%20Handling%20Palindrome%20Check.java)<br/><br/>
+  
+####  6. [String Tokenizer Sum of Integers.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/06.%20String%20Tokenizer%20Integers%20sum.java)<br/><br/>
+  
+####  7. [Exception Handling Divide Two Arrays](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/07.%20Exception%20Handling%20Divide%20Arrays.java)
+
+  
+ 
+
