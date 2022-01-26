@@ -18,11 +18,11 @@
 
 ####  2.E. [Double Ended Queue (DEQUEUE) using array.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2002/DEQUEUE.c)<br/><br/>
 
-####  3. [Infix to Postfix Expression Conversion using Stack.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2003/Infix%20to%20Postfix%20Conversion.c)<br/>
+####  3. [Infix to Postfix Expression Conversion using Stack.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2003/Infix%20to%20Postfix%20Conversion.c)<br/><br/>
 
-####  4. [Linked List Operations.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2004/Linked%20List%20Operations.c)<br/>
+####  4. [Linked List Operations.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2004/Linked%20List%20Operations.c)<br/><br/>
 
-####  5. [Linear Search and Binary Search.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2005/Linear%20Search%20and%20Binary%20Search.c)<br/>
+####  5. [Linear Search and Binary Search.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2005/Linear%20Search%20and%20Binary%20Search.c)<br/><br/>
 
 
 <h2>OOPJ LAB - Contents : <h2/> 
