@@ -22,7 +22,23 @@
 
 ####  4. [Linked List Operations.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2004/Linked%20List%20Operations.c)<br/><br/>
 
-####  5. [Linear Search and Binary Search.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2005/Linear%20Search%20and%20Binary%20Search.c)<br/><br/>
+####  5. [Linear Search and Binary Search.](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2005/Linear%20Search%20and%20Binary%20Search.c)
+
+####  6.A. [Polynomial Addtion using LL](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2006/6A_addpolyLL.c)
+
+####  6.B. [Polynomial Multiplication using LL](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2006/6B_multipolyLL.c)
+
+####  7. [Binary Tree Operations](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2007/7_binTreeOperations.c)
+
+####  8. [Sorting Algorithms](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2008/8_sorting.c)
+
+####  9. [DFS BFS Traversals](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2009/9_dfsbfs.c)
+
+
+
+
+
+<br/><br/>
 
 
 <h2>OOPJ LAB - Contents : <h2/> 
