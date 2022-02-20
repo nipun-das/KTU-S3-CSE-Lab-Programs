@@ -1,8 +1,3 @@
-/*Experiment 6.A
-Polynomial Addition using Linked List
-31/01/2022
-VML20CS066*/
-
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -131,32 +126,3 @@ void main()
     display_poly(poly_add);
 }
 
-/*OUTPUT
-
-Polynomial 1
-Enter number of terms: 3
-Enter coeff of term 1: 2
-Enter expo of term 1: 1
-Enter coeff of term 2: 3
-Enter expo of term 2: 2
-Enter coeff of term 3: 5
-Enter expo of term 3: 3
-
-Polynomial 1: 5x^3 + 3x^2 + 2x^1
-
-Polynomial 2
-Enter number of terms: 4
-Enter coeff of term 1: 4
-Enter expo of term 1: 1
-Enter coeff of term 2: 2
-Enter expo of term 2: 2
-Enter coeff of term 3: 3
-Enter expo of term 3: 3
-Enter coeff of term 4: 7
-Enter expo of term 4: 4
-
-Polynomial 2: 7x^4 + 3x^3 + 2x^2 + 4x^1
-
-Polynomial sum: 7x^4 + 8x^3 + 5x^2 + 6x^1
-
-*/
