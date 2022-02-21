@@ -58,7 +58,7 @@
   
 ####  7. [Exception Handling Divide Two Arrays](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/07.%20Exception%20Handling%20Divide%20Arrays.java)<br/><br/>
   
-####  8. [Thread Synchronization](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/08.%20Thread%20Synchronization%20Multiplication%20Table.java)<br/><br/>
+####  8. [Thread Synchronization Multiplication Table](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/08.%20Thread%20Synchronization%20Multiplication%20Table.java)<br/><br/>
   
 ####  9. [Doubly Linked List](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/09.%20Doubly%20Linked%20List.java)
 
