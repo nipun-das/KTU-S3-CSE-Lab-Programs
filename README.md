@@ -60,7 +60,7 @@
   
 ####  8. [Thread Synchronization](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/08.%20Thread%20Synchronization%20Multiplication%20Table.java)<br/><br/>
   
-####  7. [Doubly Linked List](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/09.%20Doubly%20Linked%20List.java)
+####  9. [Doubly Linked List](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/OOPJ%20Lab/09.%20Doubly%20Linked%20List.java)
 
   
  
