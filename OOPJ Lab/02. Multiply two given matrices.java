@@ -18,7 +18,7 @@ public class ProductMatrix {
         int q = s.nextInt();
         int a[][] = new int[m][n];
         int b[][] = new int[p][q];
-        int c[][] = new int[n][p];
+        int c[][] = new int[m][q];
         if (n == p) {
             System.out.println("Enter the elements of first matrix : ");
             for (i = 0; i < m; i++) {
@@ -51,7 +51,7 @@ public class ProductMatrix {
                 System.out.print("\n");
             }
         } else {
-            System.out.println("matrix multiplication not possible");
+            System.out.println("Matrix multiplication not possible");
 
         }
     }
