@@ -28,11 +28,14 @@
 
 ####  6.B. [Polynomial Multiplication using LL](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2006/6B_multipolyLL.c)<br/><br/>
 
-####  7. [Binary Tree Operations](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2007/7_binTreeOperations.c)<br/><br/>
+####  7.A. [Binary Tree Operations using LL](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2007/7_binTreeOperations.c)
+####  7.B. [Binary Tree Operations using array](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2007/7B_binTreeOperationsArray.c)<br/><br/>
 
 ####  8. [Sorting Algorithms](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2008/8_sorting.c)<br/><br/>
 
 ####  9. [DFS BFS Traversals](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2009/9_dfsbfs.c)<br/><br/>
+
+####  10. [Hashing](https://github.com/nipun-das/KTU-S3-CSE-Lab-Programs/blob/main/DS%20Lab/EXPERIMENT%2010/10_Hashing.c)<br/><br/>
 
 
 
