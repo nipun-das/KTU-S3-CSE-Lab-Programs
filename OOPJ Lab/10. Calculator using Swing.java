@@ -2,28 +2,32 @@
 digits and the + - * % operations properly. Add a text field to display the result.
 Handle any possible exceptions like divide by zero. Use Java Swing.*/
 
-import java.awt.*;
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
 
 public class CalculatorSwing extends JFrame implements ActionListener {
-    JTextField t;
+
     JButton b0, b1, b2, b3, b4, b5, b6, b7, b8, b9;
-    JButton bMinus, bPlus, bDivide, bMultiply, bDot, bEquals, bClear;
-    double val1 = 0, val2 = 0, choice = 0, result = 0;
-    String operator, s;
-    boolean flag = true;
+    JButton bPlus, bMinus, bMultiply, bDivide, bClear, bEquals, bDot;
+    JTextField t;
+    String s, operator;
+    boolean f = true;
+    double val1 = 0, val2 = 0, result = 0;
 
     public CalculatorSwing() {
-        JFrame frame = new JFrame("CALCULATOR");
+        JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GridBagLayout layout = new GridBagLayout();
         GridBagConstraints gbc = new GridBagConstraints();
         frame.setLayout(layout);
+        
+        
         t = new JTextField(10);
         t.setText("");
         t.setEditable(false);
+        
+        b0 = new JButton("0");
         b0 = new JButton("0");
         b1 = new JButton("1");
         b2 = new JButton("2");
@@ -41,6 +45,8 @@ public class CalculatorSwing extends JFrame implements ActionListener {
         bDot = new JButton(".");
         bEquals = new JButton("=");
         bClear = new JButton("c");
+        
+        b0.addActionListener(this);
         b0.addActionListener(this);
         b1.addActionListener(this);
         b2.addActionListener(this);
@@ -58,70 +64,90 @@ public class CalculatorSwing extends JFrame implements ActionListener {
         bDot.addActionListener(this);
         bEquals.addActionListener(this);
         bClear.addActionListener(this);
+
         gbc.fill = GridBagConstraints.HORIZONTAL;
+        
         gbc.gridwidth = 3;
         gbc.gridx = 0;
         gbc.gridy = 0;
         frame.add(t, gbc);
+
         gbc.gridwidth = 1;
         gbc.gridx = 3;
         gbc.gridy = 0;
         frame.add(bEquals, gbc);
+
         gbc.gridx = 0;
         gbc.gridy = 1;
         frame.add(b1, gbc);
+
         gbc.gridx = 1;
         gbc.gridy = 1;
         frame.add(b2, gbc);
+
         gbc.gridx = 2;
         gbc.gridy = 1;
         frame.add(b3, gbc);
+
         gbc.gridx = 3;
         gbc.gridy = 1;
         frame.add(bPlus, gbc);
+
         gbc.gridx = 0;
         gbc.gridy = 2;
         frame.add(b4, gbc);
+
         gbc.gridx = 1;
         gbc.gridy = 2;
         frame.add(b5, gbc);
+
         gbc.gridx = 2;
         gbc.gridy = 2;
         frame.add(b6, gbc);
+
         gbc.gridx = 3;
         gbc.gridy = 2;
         frame.add(bMinus, gbc);
+
         gbc.gridx = 0;
         gbc.gridy = 3;
         frame.add(b7, gbc);
+
         gbc.gridx = 1;
         gbc.gridy = 3;
         frame.add(b8, gbc);
+
         gbc.gridx = 2;
         gbc.gridy = 3;
         frame.add(b9, gbc);
+
         gbc.gridx = 3;
         gbc.gridy = 3;
         frame.add(bDivide, gbc);
+
         gbc.gridx = 0;
         gbc.gridy = 4;
         frame.add(bDot, gbc);
+
         gbc.gridx = 1;
         gbc.gridy = 4;
         frame.add(b0, gbc);
+
         gbc.gridx = 2;
         gbc.gridy = 4;
         frame.add(bClear, gbc);
+
         gbc.gridx = 3;
         gbc.gridy = 4;
         frame.add(bMultiply, gbc);
+
         frame.setSize(200, 200);
         frame.setVisible(true);
     }
 
     public void actionPerformed(ActionEvent ae) {
         String temp = ae.getActionCommand();
-        if (('0' <= temp.charAt(0) && temp.charAt(0) <= '9') || temp.equals(".")) {
+        if (('0' <= temp.charAt(0) && temp.charAt(0) <= '9') || temp.equals('.')) {
             t.setText(t.getText() + temp);
         } else if (temp == "+" || temp == "-" || temp == "*" || temp == "/") {
             t.setText(t.getText() + temp);
@@ -150,14 +176,14 @@ public class CalculatorSwing extends JFrame implements ActionListener {
             } catch (Exception e) {
                 System.out.println(e);
             }
-            String r = String.format("%.4f", result);
+            String r = String.format("%.3f", result);
             t.setText(t.getText() + " = " + r);
         } else if (temp == "c") {
             t.setText("");
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new CalculatorSwing();
