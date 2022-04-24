@@ -36,7 +36,7 @@ public class ProductMatrix {
             }
 
             for (i = 0; i < m; i++) {
-                for (j = 0; j < n; j++) {
+                for (j = 0; j < q; j++) {
                     c[i][j] = 0;
                     for (k = 0; k < n; k++) {
                         c[i][j] += a[i][k] * b[k][j];
