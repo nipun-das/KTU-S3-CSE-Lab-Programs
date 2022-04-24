@@ -1,7 +1,6 @@
 /*Write a Java program for the following: ** 1) Create a doubly linked list of
 elements. 2) Delete a given element from the above list. 3) Display the contents
 of the list after deletion.*/
-
 import java.util.Scanner;
 
 class List {
@@ -33,32 +32,32 @@ class List {
 
     public void delNode(int x) {
         int f = 0;
-        Node current = head, newNext;
+        Node temp = head, newNext;
         if (head.item == x) {
-            head = current.next;
+            head = temp.next;
             head.previous = null;
             return;
         }
-        while (current.next.item != x) {
-            current = current.next;
+        while (temp.next.item != x) {
+            temp = temp.next;
         }
-        if (current.next.next == null)
-            current.next = null;
+        if (temp.next.next == null)
+            temp.next = null;
         else {
-            newNext = current.next.next;
-            current.next = newNext;
-            newNext.previous = current;
+            newNext = temp.next.next;
+            temp.next = newNext;
+            newNext.previous = temp;
         }
     }
 
     public void displayNode() {
-        Node current = head;
+        Node temp = head;
         if (head == null) {
             System.out.println("List is Empty!");
         } else {
-            while (current != null) {
-                System.out.print(current.item + " ");
-                current = current.next;
+            while (temp != null) {
+                System.out.print(temp.item + " ");
+                temp = temp.next;
             }
         }
         System.out.println();
