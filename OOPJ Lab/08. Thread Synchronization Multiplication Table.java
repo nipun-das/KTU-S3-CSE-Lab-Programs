@@ -1,3 +1,5 @@
+//Write a Java program that shows thread synchronization.
+
 class Five extends Thread {
     int x;
 
