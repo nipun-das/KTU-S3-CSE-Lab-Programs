@@ -151,7 +151,7 @@ public class CalculatorSwing extends JFrame implements ActionListener {
                 System.out.println(e);
             }
             String r = String.format("%.4f", result);
-            t.setText(t.getText() + "=" + r);
+            t.setText(t.getText() + " = " + r);
         } else if (temp == "c") {
             t.setText("");
         }
