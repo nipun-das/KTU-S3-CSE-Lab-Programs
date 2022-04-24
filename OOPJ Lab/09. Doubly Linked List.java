@@ -1,3 +1,7 @@
+/*Write a Java program for the following: ** 1) Create a doubly linked list of
+elements. 2) Delete a given element from the above list. 3) Display the contents
+of the list after deletion.*/
+
 import java.util.Scanner;
 
 class List {
