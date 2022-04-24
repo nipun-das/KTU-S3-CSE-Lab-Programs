@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class QuickSort {
 
-    int partition(String A[], int lb, int ub) {
+    int partition(String A[], int lb, int ub) { //rt int
         String pivot, temp;
         int start, end;
 
